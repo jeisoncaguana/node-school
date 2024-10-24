@@ -1,0 +1,34 @@
+# Configuraciones basicas de aplicacion 
+PORT = 123
+MODE = 'developer'
+PROTOCOL = 'http'
+
+# Contraseñas generales de aplicación
+secretKeyAPI = 'key_app'
+secretPassworkKeyAPI = 'key_app'
+
+# ruta de directorios
+path_certificado = 'c:/carpeta/path_certificado'
+key_ssl          = 'key_ssl.key'
+cert_ssl         = 'cert_ssl.crt'
+ca_cert_ssl      = 'ca_cert_ssl.crt'
+ca_bundle_ssl    = 'ca_bundle_ssl.crt'
+path_plublic     = 'c:/carpeta/path_plublic'
+
+# Contraseñas de correo elextrónico 
+email_host = 'host'
+email_port = 123
+email_secure = false 
+email_user = 'email@correo.es'
+email_pass = 'clave_de_aplicacion'
+email_rejectUnauthorized = false
+
+
+# Conexión a la base de datos SRV-DEVELOPER
+dialect_app  = 'mssql'
+host_app  = 'host'
+username_app  = 'user'
+password_app  = 'pass'
+database_app_security     = 'database'
+database_app_mxpsecuence  = 'database'
+port_app   = 1433
