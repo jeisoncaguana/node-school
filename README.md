@@ -1,34 +1,30 @@
 # Node API Escuela Grupo Cañas y Tapas
 
-Node Escuela API module.
+Este módulo es la API de la Escuela Grupo Cañas y Tapas.
 
 ## Versionar en git
+Utiliza los siguientes comandos para versionar tu código:
 
 ```bash
 new -  nueva funcionalidad	
-
 enhance - mejoras en alguna funcionalidad
-
 fix -  arreglar alguna funcionalidad 
-
 remove - eliminar funcionalidad
-
 ```
-
-## Installation
-
+## Instalación
+Para instalar las dependencias del proyecto, ejecuta:
 ```bash
 npm install 
 ```
 
-## Configuration of enviroment variables
-
+## Configuración de variables de entorno
+Configura las variables de entorno en un archivo .env:
 ```js
 //# Configuraciones basicas de aplicacion 
 PORT = 3000
 MODE = 'developer'
 PROTOCOL = 'http' // http / https
-
+       
 //# Contraseñas generales de aplicación
 secretKeyAPI = 'kesecretKeyAPIy'
 secretPassworkKeyAPI = 'secretPassworkKeyAPI'
@@ -42,7 +38,6 @@ ca_cert_ssl      = 'certificate_.crt'
 ca_bundle_ssl    = 'bundle_.crt'
 path_plublic     = '/Users/Documents/temporal_files'
 assets_path_plublic     = '/Users/Documents/temporal_files'
-
   
 //# Conexión a la base de datos SRV-DEVELOPER
 dialect_app = 'mssql'
@@ -54,11 +49,8 @@ port_app = 1433
 
 ```
 
-## Start aplication
-
+## Iniciar la aplicación
+Para iniciar la aplicación en modo desarrollo, ejecuta:
 ```bash
 npm run dev 
 ```
-
-## Info puertos
- 
