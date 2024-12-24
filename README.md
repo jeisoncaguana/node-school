@@ -43,16 +43,7 @@ ca_bundle_ssl    = 'bundle_.crt'
 path_plublic     = '/Users/Documents/temporal_files'
 assets_path_plublic     = '/Users/Documents/temporal_files'
 
-//# Contraseñas de correo elextrónico 
-email_host = 'smtp.server.com'
-email_port = 123
-email_secure = false 
-email_user = 'email@correo.es'
-email_pass = 'claveaplicacion'
-email_rejectUnauthorized = false 
-
- 
-
+  
 //# Conexión a la base de datos SRV-DEVELOPER
 dialect_app = 'mssql'
 host_app = 'server'

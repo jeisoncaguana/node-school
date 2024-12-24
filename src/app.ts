@@ -7,11 +7,11 @@ import helmet from 'helmet'
 import compression from 'compression'
 import cors from 'cors'
 
-import { htmlHome } from './utility/utility'
+import { htmlHome } from './utility/index.utility'
 import { ca_bundle_ssl, ca_cert_ssl, cert_ssl, key_ssl, MODE, 
          path_certificado, 
          PORT, 
-         PROTOCOL } from './config'
+         PROTOCOL } from './config/index.config'
 
 import api from './api/routes'
  

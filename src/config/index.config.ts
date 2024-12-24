@@ -21,21 +21,7 @@ export const ca_bundle_ssl    = process.env.ca_bundle_ssl
 export const path_plublic     = process.env.path_plublic
 export const assets_path_plublic     = process.env.assets_path_plublic
 
-
-// # Contraseñas de correo elextrónico 
-export const account_email: any = {    
-    host: process.env.email_host,
-    port: process.env.email_port,
-    secure: JSON.parse( process.env.email_secure || 'false' ),  
-    auth: { 
-        user: process.env.email_user,
-        pass: process.env.email_pass 
-     },
-    tls: {
-        rejectUnauthorized: JSON.parse(process.env.email_rejectUnauthorized || 'false')
-    }
-}
-
+ 
 
 // # Conexión a la base de datos SRV-DEVELOPER
 export const conexion_app_security:any = {
@@ -47,21 +33,4 @@ export const conexion_app_security:any = {
     port: process.env.port_app
   }
 
-  // # Conexión a la base de datos SRV-DEVELOPER
-export const conexion_app_mxp_secuence:any = {
-  dialect: process.env.dialect_app,
-  host: process.env.host_app,
-  username: process.env.username_app,
-  password: process.env.password_app,
-  database: process.env.database_app_mxpsecuence,
-  port: process.env.port_app
-}
-
-  // # Drivers de API Impresiones
-export const driversapi = {
-  SENOR:"SENOR",
-  EPSON:"EPSON",
-  POSIFLEX:"POSIFLEX",
-  VCOCINA:"VCOCINA"
-}
-
+ 

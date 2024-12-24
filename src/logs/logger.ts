@@ -1,6 +1,6 @@
 import { createLogger, format, transports } from 'winston'
-import { getCurrentDate } from '../utility/utility'
-import { MODE } from '../config'
+import { getCurrentDate } from '../utility/index.utility'
+import { MODE } from '../config/index.config'
   
 const { combine } = format
 
@@ -27,7 +27,6 @@ export const logger = createLogger({
   
   if (MODE !== 'production') 
     logger.add(new transports.Console({ format: format.simple()}))
-
 
   export function saveLog( message:string = "", type?:"info"|"error" ) {
       if( type  === "info"){

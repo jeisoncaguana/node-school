@@ -1,16 +1,12 @@
 import { Router } from 'express'
 
-import { verifyToken } from '../decorator/http/protected'
-import { checkSchemaHolaMundo } from './validations'
+import { verifyToken } from '../decorator/http/protected.decorator'
+import { checkSchemaHolaMundo } from './validator/index.validator'
 
-import { GetHolaMundoFunction, PostHolaMundoFunction } from '.'
-
+import { GetHolaMundoFunction } from './index.api'
  
 const api = Router()
 
-
+api.get( "/hola",   checkSchemaHolaMundo,   [verifyToken],  GetHolaMundoFunction )
  
-api.get( "/hola", checkSchemaHolaMundo, GetHolaMundoFunction )
-api.post( "/hola", checkSchemaHolaMundo, [verifyToken], PostHolaMundoFunction )
-
 export default api
